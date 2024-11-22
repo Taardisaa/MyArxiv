@@ -1,21 +1,6 @@
-site_title = "MyArxiv"
-limit_days = 7
+site_title = "Taardisaa's Arxiv"
+limit_days = 180
 cache_url = "https:/Taardisaa.github.io/MyArxiv/cache.json"
-
-[[sources]]
-limit = 150
-category = "cs.CL"
-title = "Computation and Language"
-
-[[sources]]
-limit = 150
-category = "cs.CV"
-title = "Computer Vision and Pattern Recognition"
-
-[[sources]]
-limit = 150
-category = "cs.IR"
-title = "Information Retrieval"
 
 [[sources]]
 limit = 150
@@ -24,8 +9,13 @@ title = "Machine Learning"
 
 [[sources]]
 limit = 150
-category = "cs.MM"
-title = "Multimedia"
+category = "cs.AI"
+title = "Artificial Intelligence"
+
+[[sources]]
+limit = 150
+category = "cs.CR"
+title = "Cryptography and Security"
 
 [scripts]
 highlight_title = "scripts/highlight_title.rhai"
