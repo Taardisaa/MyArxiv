@@ -1,6 +1,6 @@
-site_title = "Taardisaa's Arxiv"
+site_title = "Taardisaa Arxiv"
 limit_days = 180
-cache_url = "https:/Taardisaa.github.io/MyArxiv/cache.json"
+cache_url = "https://Taardisaa.github.io/MyArxiv/cache.json"
 
 [[sources]]
 limit = 150
