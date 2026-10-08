@@ -1,3 +1,16 @@
+## Personal GPU-security feed
+
+This fork now collects a focused keyword feed rather than whole arXiv categories.
+Edit `scope.toml` for the query words, the 90-day retention window, and the 60-paper hard cap.
+`python3 scripts/build_feed.py` fetches fresh Atom metadata, filters title/abstract relevance,
+deduplicates arXiv versions, and renders the existing template with the downloaded `arxivfeed` binary.
+It never merges the previous website cache. Failed requests or an empty result stop publication.
+Keyword filtering can miss papers and include adjacent work; this is a reading shelf, not an exhaustive survey.
+The GitHub Update workflow remains manually disabled. The public website is a snapshot.
+
+The interface supports title/author/abstract search, date filtering, light/dark mode,
+and loading 40 papers at a time. The original project documentation follows below.
+
 <p align="center">
 <h1 align="center"> <img src="./imgs/icon/ai.png" width="30" />MyArxiv</h1>
 </p>

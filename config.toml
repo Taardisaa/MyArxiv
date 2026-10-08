@@ -1,25 +1,10 @@
-site_title = "Taardisaa Arxiv"
-limit_days = 180
-cache_url = "https://Taardisaa.github.io/MyArxiv/cache.json"
+site_title = "GPU Security · MyArxiv"
+limit_days = 90
+sources = []
 
-[[sources]]
-limit = 150
-category = "cs.LG"
-title = "Machine Learning"
-
-[[sources]]
-limit = 150
-category = "cs.AI"
-title = "Artificial Intelligence"
-
-[[sources]]
-limit = 150
-category = "cs.CR"
-title = "Cryptography and Security"
-
+# Query and collection limits live in scope.toml.
+# scripts/build_feed.py supplies a fresh bounded cache for every build.
 [scripts]
 highlight_title = "scripts/highlight_title.rhai"
 highlight_author = "scripts/highlight_author.rhai"
 highlight_conference = "scripts/highlight_conference.rhai"
-
-

@@ -16,12 +16,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - uses: actions/checkout@v2
       - name: Download ArxivFeed
         env:
           GITHUB_PAT: ${{ github.token }}
           REPO: "NotCraft/ArxivFeed"
-          VERSION: "latest"
+          VERSION: "tags/v0.1.4"
           MATCH: "arxivfeed-.+-x86_64-unknown-linux-musl.tar.gz$"
           RENAME: "arxivfeed.tgz"
         shell: bash
@@ -40,7 +43,7 @@ jobs:
           tar -zxvf arxivfeed.tgz --strip-components 1 $(tar tf arxivfeed.tgz | grep /arxivfeed)
           chmod +x arxivfeed
       - name: Build rss
-        run: ./arxivfeed
+        run: python3 scripts/build_feed.py
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

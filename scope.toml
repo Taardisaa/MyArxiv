@@ -1,0 +1,7 @@
+# Title/abstract keyword feed, not a guarantee of exhaustive coverage.
+name = "GPU security"
+retention_days = 90
+max_papers = 60
+fetch_limit = 300
+gpu_terms = ["GPU", "GPUs", "CUDA", "graphics processing"]
+security_terms = ["side channel", "side-channel", "rowhammer", "confidential", "trusted execution", "memory safety", "vulnerability", "vulnerabilities", "information flow", "data isolation", "fault attack", "security"]
