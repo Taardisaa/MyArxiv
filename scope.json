@@ -1,0 +1,6 @@
+{
+  "name": "GPU security",
+  "retention_days": 90,
+  "max_papers": 60,
+  "papers": 12
+}
